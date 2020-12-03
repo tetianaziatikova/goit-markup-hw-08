@@ -1,0 +1,13 @@
+@import "./utils/variables";
+
+// BASE
+@import "./base/common";
+
+//UTILS
+@import "./utils/visually-hidden";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/portfolio";
+@import "./layout/contact";
+@import "./layout/footer";
