@@ -610,7 +610,7 @@ h2 {
   align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  max-width: 210px;
+  min-width: 210px;
   height: 90px;
   transition-property: border;
   transition-duration: 250ms;
@@ -648,14 +648,23 @@ h2 {
   .team-iteam:not(:last-child) {
     margin-bottom: 30px;
   }
+  .section-customers-title {
+    margin-top: 60px;
+    margin-bottom: 0;
+    color: #212121;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+  }
   .customers-list {
+    padding-bottom: 60px;
     flex-wrap: wrap;
+    min-width: 210px;
+    justify-content: space-between;
   }
-  .customers-iteam:not(:nth-last-child(-n+2)) {
+  .customers-iteam:not(:last-child) {
     margin-bottom: 30px;
-  }
-  .customers-iteam:not(:nth-child(2n)) {
-    margin-right: 30px;
   }
 }
 
@@ -781,11 +790,14 @@ h2 {
   .icon-list-link:hover {
     background-color: #2196f3;
   }
+  .customers-iteam {
+    min-width: 170px;
+  }
   .customers-iteam:not(:last-child) {
     margin-right: 30px;
   }
   .link-customers {
-    width: 170px;
+    min-width: 170px;
   }
 }
 
